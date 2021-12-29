@@ -1,0 +1,19 @@
+{
+  "name": "graphql_mesh",
+  "version": "1.0.0",
+  "description": "prototype for graphql mesh",
+  "main": "index.js",
+  "scripts": {
+    "dev": "mesh dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-mesh/cli": "^0.44.5",
+    "@graphql-mesh/grpc": "^0.18.7",
+    "@graphql-mesh/openapi": "^0.23.0",
+    "@graphql-mesh/runtime": "^0.26.10",
+    "graphql": "^15.8.0"
+  }
+}

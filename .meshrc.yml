@@ -1,0 +1,17 @@
+sources:
+  - name: StackExchange
+    handler:
+      openapi:
+        source: https://raw.githubusercontent.com/grokify/api-specs/master/stackexchange/stackexchange-api-v2.2_openapi-v3.0.yaml
+  - name: Authzed
+    handler:
+      grpc:
+        endpoint: grpc.authzed.com:443
+        metaData:
+          token: 'tc_node_client_def_0cf56237482d5d379f7093dc1c5b6aa030afc2bf9f8fcf41e687a5666d0a1573ca9b305f686e71bab692867c88dda04bf620471f17744a51609186769aa85993'
+          connection_type: ['headers', 'connection']
+        protoFilePath:
+          file: ./v1/permission_service.proto
+          load:
+            includeDirs:
+              - ./v1
