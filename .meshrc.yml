@@ -7,11 +7,14 @@ sources:
     handler:
       grpc:
         endpoint: grpc.authzed.com:443
+        useHTTPS : true
         metaData:
-          token: 'some_token'
-          connection_type: ['headers', 'connection']
+          Authorization: 'Bearer {env.AUTHZED_CLIENT_TOKEN}'
         protoFilePath:
-          file: ./v1/permission_service.proto
+          file: authzed/api/v1/permission_service.proto
           load:
             includeDirs:
-              - ./v1
+              - ./proto
+    transforms:
+      - namingConvention:
+          fieldNames: camelCase   
