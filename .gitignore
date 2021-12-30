@@ -1,3 +1,15 @@
 node_modules/
 .env
 package-lock.json
+temp
+dist
+out
+build
+generated
+yarn-error.log
+temp
+*.generated.graphql
+ignored-demo
+.bob
+.history
+.DS_Store
