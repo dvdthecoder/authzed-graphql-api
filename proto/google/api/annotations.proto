@@ -1,37 +1,32 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <link rel="icon" type="image/png" href="/static/img/favicon.png">
-    
-    <link rel="stylesheet" href="/static/bundle/index-X4O56UQH.css">
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <script nonce=wkqf7&#43;St4eTMDt75Rv1Feg&#61;&#61; src="https://gerbil.buf.build/script.js" data-spa="auto" data-site="ISUUUICW" defer></script>
-    
-    
-    <script nonce=wkqf7&#43;St4eTMDt75Rv1Feg&#61;&#61;>
-    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/hv5340yt';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-    </script>
-    
-    <script type="application/json" id="buf-features">
-        {
-            "multiTenant":  true 
-        }
-    </script>
-    <title>Buf Schema Registry</title>
-</head>
-
-<body><noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    
-    <script nonce=wkqf7&#43;St4eTMDt75Rv1Feg&#61;&#61; src="/static/bundle/index-VH3DAHTQ.js"></script>
-    
-</body>
-
-</html>
+// Copyright 2015 Google LLC
+2	//
+3	// Licensed under the Apache License, Version 2.0 (the "License");
+4	// you may not use this file except in compliance with the License.
+5	// You may obtain a copy of the License at
+6	//
+7	//     http://www.apache.org/licenses/LICENSE-2.0
+8	//
+9	// Unless required by applicable law or agreed to in writing, software
+10	// distributed under the License is distributed on an "AS IS" BASIS,
+11	// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+12	// See the License for the specific language governing permissions and
+13	// limitations under the License.
+14	
+15	syntax = "proto3";
+16	
+17	package google.api;
+18	
+19	import "google/api/http.proto";
+20	import "google/protobuf/descriptor.proto";
+21	
+22	option go_package = "google.golang.org/genproto/googleapis/api/annotations;annotations";
+23	option java_multiple_files = true;
+24	option java_outer_classname = "AnnotationsProto";
+25	option java_package = "com.google.api";
+26	option objc_class_prefix = "GAPI";
+27	
+28	extend google.protobuf.MethodOptions {
+29	  // See `HttpRule`.
+30	  HttpRule http = 72295728;
+31	}
+32	
