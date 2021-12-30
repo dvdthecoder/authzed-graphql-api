@@ -17,6 +17,7 @@
     "@graphql-mesh/transform-naming-convention": "^0.8.5",
     "@grpc/proto-loader": "^0.6.7",
     "google-protobuf": "^3.19.1",
+    "@grpc/grpc-js": "^1.4.5",
     "graphql": "^15.8.0"
   },
   "resolutions": { 

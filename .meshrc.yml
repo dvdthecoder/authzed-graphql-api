@@ -11,7 +11,7 @@ sources:
         metaData:
           Authorization: 'Bearer {env.AUTHZED_CLIENT_TOKEN}'
         protoFilePath:
-          file: authzed/api/v1/permission_service.proto
+          file: ./proto/authzed/api/v1/schema_service.proto
           load:
             includeDirs:
               - ./proto
