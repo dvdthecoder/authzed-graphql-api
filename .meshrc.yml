@@ -1,4 +1,8 @@
 sources:
+  - name: Authzed-OpenAPI
+    handler:
+      openapi:
+        source: https://raw.githubusercontent.com/authzed/authzed-go/main/proto/apidocs.swagger.json
   - name: Authzed-gRPC
     handler:
       grpc:
