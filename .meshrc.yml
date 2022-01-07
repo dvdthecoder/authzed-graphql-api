@@ -6,7 +6,7 @@ sources:
         useHTTPS : false
         useReflection: true
         metaData:
-          Authorization: 'somerandomkey'
+          Authorization: somerandomkey
         protoFilePath:
           file: ./proto/authzed/api/v1/permission_service.proto
           load:
