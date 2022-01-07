@@ -8,7 +8,7 @@ The *yaml configuration* uses *reflection* strategy , therefore we need a runnin
 - Get a docker instance of SpiceDB up and running
 #### Option 2
 - Follow instructions https://github.com/authzed/spicedb 
-
+#### Execute
 - Clone the current repo
 - Run `npm run dev` 
 
