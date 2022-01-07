@@ -2,10 +2,13 @@
 This repos contains configuration that is being use to generate a graphQL end point using the graphql_mesh gRPC handler for Authzed gRPC end-points(https://buf.build/authzed/api)
 
 ### Local Development
-The definitions for generating the graphQL end-points uses *reflection* strategy , therefore we need a running instance of SpiceDB
-- Clone following repo https://github.com/dvdthecoder/authzed-docker-compose-postgres get a docker instance of SpiceDB up and running
-or
+The *yaml configuration* uses *reflection* strategy , therefore we need a running instance of SpiceDB
+#### Option 1
+- Clone following repo https://github.com/dvdthecoder/authzed-docker-compose-postgres 
+- Get a docker instance of SpiceDB up and running
+#### Option 2
 - Follow instructions https://github.com/authzed/spicedb 
+
 - Clone the current repo
 - Run `npm run dev` 
 
